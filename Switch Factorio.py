@@ -1,24 +1,7 @@
-# import json
 import os
 
 variables = []
 MODPACKNAMEFILE = "modpackname.txt"
-
-
-'''
-def getValuesFromFile():
-    global variables
-    log("\nGetting values from file")
-    try:
-        with open("Switch Factorio.json", "r+") as f:
-            variables = json.loads(f.read())
-            log("\nSuccess")
-    except FileNotFoundError:
-        log("\nFile not found")
-        with open("Switch Factorio.json", "w") as f:
-            f.write(json.dumps("['mods - DrakeNJack',{'mods - DrakeNJack','mods - Alone'}]"))
-        getValuesFromFile()
-'''
 
 
 def getIntInput(stringMessage, stringErrorMessage, intUpperBound, intLowerBound=1):
@@ -80,7 +63,6 @@ def menu():
                 stringMessage += "{}). {}\n".format(counter, name)
                 indexholder["{}".format(counter)] = name
                 counter += 1
-    print(indexholder)
     stringMessage += "{}). Create a new modpack\n".format(counter)
     choice = getIntInput(stringMessage, "Out of bounds. Enter between 1 and {}".format(counter), counter, 1)
     if choice != 1:
@@ -133,5 +115,4 @@ if __name__ == "__main__":
         name = getInput("Please name your first/default modpack: ")
         with open("mods\\{}".format(MODPACKNAMEFILE), "w") as f:
             f.write(name)
-    # getValuesFromFile()
     menu()
