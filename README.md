@@ -10,7 +10,7 @@ Features:
  - Each modpack has its own saves folder to keep your saves organised
  
 How to use:
- - Run the file SwitchFactorio.py (It'll crash if you don't have Factorio installed)
+ - Run the file Switch Factorio.py (It'll crash if you don't have Factorio installed)
  - If it's your first time running, it'll ask you to give a name to your current modlist.
  - The script will check what modpacks already exist and will list all but the current one.
  - You can then enter 1 to keep the current modpack, 2-n to switch to the modpack in the 'n' position (where n is the number of modpacks) or n+1 to create a new modpack.
