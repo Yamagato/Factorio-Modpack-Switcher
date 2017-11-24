@@ -17,3 +17,8 @@ How to use:
  - If you keep current modpack, the program terminates.
  - If you select a different modpack, that one will become the active modpack.
  - If you create a new modpack, then the list of all modpacks will show up again, updated with the new modpack.
+
+NOTE:
+Already have 2 mods and saves foldes in your Factorio directory? Simply create a new file "modpackname.txt" in order for it to be recognised as a valid modpack directory. Open this file and write the modpack name on the first line, then save and close.
+Example: 
+![Example](Capture.PNG)
